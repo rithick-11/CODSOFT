@@ -1,3 +1,5 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Kdam+Thmor+Pro&family=Oswald:wght@300&family=Playpen+Sans:wght@500&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -6,9 +8,49 @@
     text-decoration: none;
 }
 :root{
-    --text-1: #ffffff :
+    --text-1:#fff;
+    --span-1:red;
 }
+section {
+    height: 100vh;
+}
+section{
+    background-color: red;
+}
+
 .navigation a h3{
     color: var(--text-1);
     margin: 0px;
+    font-size: 1,5rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.nav-link a li {
+    color: var(--text-1);
+    font-size:1.2rem ;
+    font-family: 'Oswald', sans-serif;
+}
+.nav-link a li span{
+    color: var(--span-1);
+    font-family: 'Oswald', sans-serif;
+}
+.nav-link a:hover{
+    text-decoration: none;
+}
+
+/* responsive style  */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+    section{
+        background-color: green;
+    }
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .nav-link {
+        list-style: none;
+        width: 50%;
+        justify-content: space-around;
+    }
+    
 }
