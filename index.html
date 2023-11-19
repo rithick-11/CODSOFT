@@ -13,24 +13,28 @@
 
 <body>
     <nav class="bg-dark shadow">
-        <div class="navbar container pt-2 pb-2 navigation ">
+        <div class="d-flex justify-content-between container pt-2 pb-2 navigation">
             <a href=""><h3>Rithick</h3></a>
-            <ul class="nav-link d-none d-md-flex m-0 p-0 ">
+            <ul class="nav-link d-none d-md-flex m-0 p-0 " id="navLink">
                 <a href="#homesection"><li><span>H</span>ome</li></a>
                 <a href=""><li><span>A</span>obut</li></a>
                 <a href=""><li><span>s</span>kills</li></a>
                 <a href=""><li><span>P</span>roject</li></a>
                 <a href=""><li><span>C</span>ontact</li></a>
             </ul>
-            <i class="d-md-none fa-solid fa-bars "></i>
-            <i class="d-md-none d-none fa-solid fa-xmark"></i>
+            <i class="d-md-none fa-solid fa-bars" id="menu" onclick="show()"></i>
+            <i class="d-md-none d-none fa-solid fa-xmark" id="xbar" onclick="show()"></i>
         </div>
         
     </nav>
     <!-- home section -->
-    <section id="homesection">
-        <h1>Rithick</h1>
-    </section>
+    <div id="homesection">
+        <section class="container">
+
+        </section>
+    </div>
+    <!-- java script -->
+    <script src="script.js"></script>
     <!-- script for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

@@ -10,6 +10,7 @@
 :root{
     --text-1:#fff;
     --span-1:red;
+    --span-1-t:rgba(0, 0, 0, 0.5);
 }
 section {
     height: 100vh;
@@ -24,17 +25,22 @@ section{
     font-size: 1,5rem;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
-.nav-link a li {
+.nav-link a{
     color: var(--text-1);
     font-size:1.2rem ;
     font-family: 'Oswald', sans-serif;
 }
-.nav-link a li span{
+.nav-link a span{
     color: var(--span-1);
     font-family: 'Oswald', sans-serif;
 }
 .nav-link a:hover{
     text-decoration: none;
+}
+.navigation i {
+    font-size: 1.5rem;
+    color: var(--span-1);
+    cursor: pointer;
 }
 
 /* responsive style  */
@@ -43,14 +49,37 @@ section{
     section{
         background-color: green;
     }
+    .navigation {
+        position: relative;
+    }
+    .nav-link {
+        position: absolute;
+        top:8vh;
+        right: 0;
+        list-style: none;
+        width: 40%;
+        border: 1px solid var(--span-1);
+        background-color: var(--span-1-t);
+        border-radius: 1rem;
+    }
+    .nav-link a li{
+        margin: 1rem 2rem;
+        padding: .5rem 1rem;
+    }
+    .nav-link a li:hover{
+        border: 2px solid red;
+        background-color:hsla(0, 0%, 0%, 0.400) ;
+        border-radius: 10%;
+    }
     
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .nav-link {
         list-style: none;
-        width: 50%;
+        padding: 1rem;
         justify-content: space-around;
+        width: 50%;
     }
     
 }
