@@ -3,8 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Roboto";
+    text-decoration: none;
 }
-
-nav {
-    height: 100vh;
+:root{
+    --text-1: #ffffff :
+}
+.navigation a h3{
+    color: var(--text-1);
+    margin: 0px;
 }
